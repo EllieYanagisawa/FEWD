@@ -1,3 +1,22 @@
 body {
-  background-color: #FDE;
+  background-color: #FFE;
+  border: 5px solid black;
+  padding: 5px;
+}
+
+img {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+header {
+  padding: 5px;
+}
+
+h1, h2 {
+  color: #887;
+}
+
+a {
+  color: #900;
 }
