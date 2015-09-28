@@ -60,8 +60,15 @@ header {
   margin: 0 auto;
 }
 
-nav {
+header nav {
   margin: 30px;
+  clear: both;
+}
+
+footer nav {
+  padding-top: 20px;
+  clear: none;
+  margin-bottom: 50px;
 }
 
 nav ul {
@@ -88,13 +95,10 @@ nav li a {
 }
 
 hr {
-  clear: both;
+  margin: 30px 0;
 }
 
-hr.thick {
-    height: 5px;
-    background-color: black;
-    border: none;
+hr.short-hori-rule {
 }
 
 a.active {
@@ -118,6 +122,11 @@ h1 {
 
 h2 {
   font-size: 30px;
+  margin: 0 0 10px 0;
+}
+
+p {
+  line-height: 1.5em;
 }
 
 div.resume-text {
