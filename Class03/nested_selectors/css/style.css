@@ -1,0 +1,31 @@
+/*END BOX-SIZING*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+/*END BOX-SIZING*/
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  color: teal;
+}
+
+em {
+  color: red;
+  font-style: italic;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+blockquote p em {
+  font-weight: bold;
+  font-size: 33px;
+  color: orange;
+  font-style: normal;
+}
