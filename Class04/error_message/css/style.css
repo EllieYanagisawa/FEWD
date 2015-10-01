@@ -1,0 +1,46 @@
+/*****************
+UTILITY CLASS
+******************/
+html {
+  box-sizing: border-box
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/*****************
+BASE STYLES
+******************/
+body {
+  margin: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  line-height: 1.5em;
+}
+
+/*****************
+MESSAGES
+******************/
+#notification {
+  background-color: yellow;
+  border: 2px solid black;
+  padding: 5px 10px;
+}
+
+.message {
+  background-color: grey;
+  border: 1px dotted yellow;
+  padding: 10px 15px;
+  margin: 5px;
+}
+
+.error {
+  background-color: red;
+  color: white;
+}
+
+.success {
+  background-color: green;
+  border: 2px solid yellow;
+}
