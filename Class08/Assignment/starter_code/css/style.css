@@ -330,10 +330,18 @@ MOBILE STYLES
     width: 100%;
   }
 
+  .sidebar .categories {
+    float: left;
+    width: 50%;
+  }
+
+  .sidebar .about {
+    float: left;
+    width: 50%;
+  }
+
   .sidebar ul li a {
     font-size: 12px;
     line-height: 14px;
   }
-
-
 }
