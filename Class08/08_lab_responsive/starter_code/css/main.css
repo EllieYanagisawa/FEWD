@@ -224,9 +224,12 @@ footer {
 MOBILE STYLES
 
 **********/
+.mobile-only {
+		display: none;
+}
+
 .mobile-nav {
 	width: 10%;
-	display: none;
 }
 
 .hamburger {
@@ -245,12 +248,15 @@ MOBILE STYLES
 		padding-bottom: 5px;
 	}
 
-	header nav {
+	.desktop-only {
 		display: none;
 	}
 
-	.mobile-nav {
+	.mobile-only {
 		display: block;
+	}
+
+	.mobile-nav {
 		float: right;
 	}
 
