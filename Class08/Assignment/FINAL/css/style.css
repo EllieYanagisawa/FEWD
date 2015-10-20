@@ -315,9 +315,15 @@ MOBILE STYLES
     display: block;
   }
 
+/** INDEX.HTML **/
   .hero {
     height: 550px;
   }
+
+  .benefits {
+    padding: 50px 0 80px;
+  }
+/** INDEX.HTML **/
 
   .posts {
     margin-right: 0;
@@ -370,5 +376,13 @@ MOBILE STYLES
 
   .blue {
     font-size: 1.5em;
+  }
+
+  footer .logo {
+    margin-bottom: 35px;
+  }
+
+  footer ul li {
+    margin: 0 25px 40px;
   }
 }
