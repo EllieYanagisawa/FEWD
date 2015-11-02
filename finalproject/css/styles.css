@@ -1,0 +1,230 @@
+/*
+Project Name: Studio Ghibli x Hayao Miyazaki 
+Client: Studio Ghibli
+Author: Ellie Yanagisawa
+Developer @GA in DC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  font-size: 24px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+i {
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 5px;
+    background: black;
+  }
+
+
+h1 {
+  font-family: Futura, Arial, sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+/**NAV STYLES**/
+#nav-button span {
+  display: block;
+  height: 16px;
+  width: 28px;
+  float: left;
+  margin: -1px 15px 0 0;
+}
+
+#nav-button {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  color: black;
+  font-family: 'Roboto Bold',Helvetica;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 44px 38px;
+  cursor: pointer;
+}
+
+/* SLIDE-MENU: BODY AND BCKGRND */
+body.has-active-menu {
+  overflow: hidden;
+}
+
+.page-mask {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background-color: #000;
+  opacity: 0;
+  -webkit-transition: opacity .3s,width 0s .3s,height 0s .3s;
+  transition: opacity .3s,width 0s .3s,height 0s .3s;
+}
+
+.page-mask.is-active {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+/* SLIDE MENU STYLES */
+.menu__slide-left {
+  position: fixed;
+  z-index: 200;
+  background-color: #ccc;
+  transition: transform 0.3s;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.menu__slide-left.is-active {
+  transform: translateX(0);
+}
+
+.menu__items {
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu__item {
+  display: block;
+  text-align: right;
+}
+
+.menu__item:first-child {
+  border-top: none;
+}
+
+.menu__item:last-child {
+  border-bottom: none;
+}
+
+.menu__link {
+  display: block;
+  padding: 12px 24px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.close-button {
+  margin: 0 auto;
+  border: none;
+  display: block;
+  padding: 12px 24px;
+  width: 100%;
+}
+
+
+.homepage-hero {
+  padding-top: 100px;
+}
+
+
+.h1 {
+  font-family: Futura, Arial, sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.divider {
+  border-bottom: 1px solid black;
+  width: 30%;
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
+.dedication {
+  background-color: #ccc;
+  padding: 50px 0;
+}
+
+/* TILE STYLES */
+.tile {
+  width: 24.8%;
+  background-color: #dedede;
+  float: left;
+  height: 250px;
+  margin: 1px;
+}
+
+@media all and (min-width: 320px) {
+  .menu__slide-left {
+    width: 300px;
+    transform: translateX(-300px);
+  }
+}
+
+
+
