@@ -6,15 +6,9 @@ $(function(){
 		$('.page-mask').addClass('is-active');
 	});
 
-	$('.close-button').click(function(){
+	$('.close-button, .page-mask').click(function(){
 		$('body').removeClass('has-active-menu');
 		$('.menu__slide-left').removeClass('is-active');
 		$('.page-mask').removeClass('is-active');
 	});
-
-	$('.page-mask').click(function(){
-		$('.menu__slide-left').removeClass('is-active');
-		$('.page-mask').removeClass('is-active');
-	});
-
 });
