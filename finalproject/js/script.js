@@ -1,5 +1,4 @@
 $(function(){
-
 	$('#nav-button').click(function(){
 		$('body').addClass('has-active-menu');
 		$('.menu__slide-left').addClass('is-active');
