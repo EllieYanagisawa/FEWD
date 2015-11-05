@@ -7,3 +7,25 @@ What will we print if the number is divisible by 3 AND 5? That's right! "FizzBuz
 There are many ways to do this, but we'd like you to use a nested conditional in this exercise.
 
 */
+
+	for (var i = 1; i <= 20; i++) {
+		if ((i % 3 === 0) && (i % 5 === 0)) {
+			console.log('FizzBuzz');
+		} else if (i % 5 === 0) {
+			console.log('Buzz');
+		} else if (i % 3 === 0) {
+			console.log('Fizz');
+		}
+	}
+
+// for (var i = 1; i <= 20; i++) {
+// 	if (i % 5 === 0) {
+// 		if (i % 3 === 0) {
+// 			console.log('FizzBuzz');
+// 		} else {
+// 			console.log('Buzz');
+// 		}
+// 	} else if (i % 3 === 0) {
+// 		conosle.log('Fizz');
+// 	}
+// }
