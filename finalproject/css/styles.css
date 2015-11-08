@@ -70,7 +70,10 @@ h1 {
   text-align: center;
 }
 
-
+p {
+  font-family: 'Cardo', serif;
+  font-size: 1em;
+}
 
 
 
@@ -82,12 +85,31 @@ h1 {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+/** FONT STYLES **/
+.h1 {
+  font-family: Futura, Arial, sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/** BASE ADDITIONAL STYLES **/
 .container {
   max-width: 1024px;
   margin: 0 auto;
 }
 
-/**NAV STYLES**/
+.hero {
+  padding: 50px 0;
+}
+
+.divider {
+  border-bottom: 1px solid black;
+  width: 30%;
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
+/** NAV STYLES **/
 #nav-button span {
   display: block;
   height: 16px;
@@ -102,14 +124,14 @@ h1 {
   left: 0;
   z-index: 30;
   color: black;
-  font-family: 'Roboto Bold',Helvetica;
+  font-family: 'Roboto',Helvetica;
   font-size: 14px;
   text-transform: uppercase;
   padding: 44px 38px;
   cursor: pointer;
 }
 
-/* SLIDE-MENU: BODY AND BCKGRND */
+/** SLIDE-MENU STYLES **/
 body.has-active-menu {
   overflow: hidden;
 }
@@ -134,7 +156,6 @@ body.has-active-menu {
   transition: opacity 0.3s;
 }
 
-/* SLIDE MENU STYLES */
 .menu__slide-left {
   position: fixed;
   z-index: 200;
@@ -186,31 +207,11 @@ body.has-active-menu {
   width: 100%;
 }
 
-
-.homepage-hero {
-  padding-top: 100px;
-}
-
-
-.h1 {
-  font-family: Futura, Arial, sans-serif;
-  font-size: 1.5em;
-  text-align: center;
-}
-
-.divider {
-  border-bottom: 1px solid black;
-  width: 30%;
-  margin-top: 20px;
-  margin: 0 auto;
-}
-
 .dedication {
   background-color: #ccc;
-  padding: 50px 0;
 }
 
-/* TILE STYLES */
+/** TILE STYLES **/
 .tile {
   width: 24.8%;
   background-color: #dedede;
@@ -226,5 +227,37 @@ body.has-active-menu {
   }
 }
 
+/** SVG ANIMATIONS **/
+.contour {
+    fill-opacity: 0;
+    fill: #747474;
+    stroke: #747474;
+    stroke-width: .5;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 5000;
+    stroke-dashoffset: 5000;
+    animation: draw, fill; 
+    animation-delay: 0s, 1.5s;
+    animation-duration: 15s, 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+  @keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+    opacity: 1;
+    }
+  }
+
+  @keyframes fill {
+    from { 
+      fill-opacity: 0; 
+    }
+    to { 
+      fill-opacity: 1; 
+    }
+  }
 
 
