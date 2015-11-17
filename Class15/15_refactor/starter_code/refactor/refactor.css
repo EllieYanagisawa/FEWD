@@ -1,0 +1,69 @@
+/*Remove inline*/
+/*Gotes to*/
+select{
+     width:150px;
+}
+
+/*Combine multiples*/
+#buttons-wrapper{
+     padding:10px;
+     border:1px solid black;
+     background:orange;
+}
+#buttons-wrapper>form{
+     padding:10px;
+     border:1px solid black;
+}
+/*Goes to*/
+
+
+/*Rename classes/ids for readability*/
+#img1{
+     margin-top: 50px;
+}
+/*Goes to*/
+
+
+/*Organize CSS*/
+.list-item{
+     width:200px;
+}
+#container>.col{
+     width:50%;
+}
+footer{
+     text-align: right;
+}
+a:hover{
+     color:purple;
+}
+header>ol{
+     list-style: none;
+}
+body{
+     background-image:url(../images/anImage.png);
+}
+#navigation-wrapper{
+     float:left;
+}
+a{
+     color:red;
+}
+header{
+     height:80px;
+}
+#container>img{
+     border:1px solid red;
+}
+footer>#company-name{
+     font-weight: bold;
+}
+/*Goes to*/
+
+
+
+/*Create classes for large css changes
+$("#container").css({background:"red",fontSize:"12px",color:"purple",boxShadow:"0 0 10px #ccc";})
+*/
+
+/*Goes to*/
