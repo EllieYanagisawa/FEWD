@@ -81,7 +81,7 @@ p {
 /*******************************************/
 
 /** LAYOUT **/
-.grid-container {
+/*.grid-container {
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
@@ -91,7 +91,7 @@ p {
   content:"";
   display: table ;
   clear: both;
-}
+}*/
 
 .hero {
   padding: 50px 0;
@@ -217,11 +217,9 @@ body.has-active-menu {
 
 /** TILE STYLES **/
 .tile {
-  width: 24.8%;
   background-color: #dedede;
-  float: left;
-  height: 250px;
-  margin: 1px;
+  height: auto;
+  /*margin: 1%;*/
 }
 
 @media all and (min-width: 320px) {

@@ -3,10 +3,10 @@
 <body>
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="css/styles.css">
-		<link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">
 		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css" >
 		<link href='https://fonts.googleapis.com/css?family=Cardo:400,400italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<div id="nav-button">
 		<span>
@@ -35,64 +35,94 @@
 			</ul>
 		</nav>
 	</header>
-	<div class="grid-container">
+	<div class="container-fluid">
 		<section class="hero">
-			<div class="title-english divider">
-				<h1>
+			<div class="row center-lg">
+				<div class="col-lg-12 title-english divider">
+					<h1>
 
-					Studio Ghibli 
-					<br />
-					x
-					<br />
-					Hayao Miyazaki
-				</h1>
+						Studio Ghibli 
+						<br />
+						x
+						<br />
+						Hayao Miyazaki
+					</h1>
+				</div>
 			</div>
-			<div class="title-japanese">
-				<h2 class="h1">
+			<div class="row center-lg">
+				<div class="col-lg-12 title-japanese">
+					<h2 class="h1">
 
-					スタジオジブリ
-					<br />
-					x
-					<br />
-					宮崎駿
-				</h2>
+						スタジオジブリ
+						<br />
+						x
+						<br />
+						宮崎駿
+					</h2>
+				</div>
 			</div>
 		</section>
-		<section class="hero dedication">
+		<section class="hero row dedication">
 			<div>
 				<p>This site is dedicated to the many great works of Hayao Miyazaki&mdash;director, screenwriter, manga artist, legendary animator, and co-founder of Studio Ghibli.</p>
 			</div>
 		</section>
-		<section class="hero tiles-container">
-			<div class="tile">
-				<h3>Nausicaa</h3>
+		<section class="hero tiles">
+			<div class="row">
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+					<div class="tile box-row">
+						<h3>Nausicaa</h3>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+					<div class="tile box-row">
+						<h3>Laputa</h3>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+					<div class="tile box-row">
+						<h3>Totoro</h3>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+					<div class="tile box-row">
+						<h3>Kiki</h3>
+					</div>
+				</div>
 			</div>
-			<div class="tile">
-				<h3>Laputa</h3>
+			<div class="row">
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+					<div class="tile box-row">
+						<h3>Porco Rosso</h3>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+					<div class="tile box-row">
+						<h3>Princess Mononoke</h3>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+					<div class="tile box-row">
+						<h3>Spirited Away</h3>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+					<div class="tile box-row">
+						<h3>Howl's Moving Castle</h3>
+					</div>
+				</div>
 			</div>
-			<div class="tile">
-				<h3>Totoro</h3>
-			</div>
-			<div class="tile">
-				<h3>Kiki</h3>
-			</div>
-			<div class="tile">
-				<h3>Porco Rosso</h3>
-			</div>
-			<div class="tile">
-				<h3>Princess Mononoke</h3>
-			</div>
-			<div class="tile">
-				<h3>Spirited Away</h3>
-			</div>
-			<div class="tile">
-				<h3>Howl's Moving Castle</h3>
-			</div>
-			<div class="tile">
-				<h3>Ponyo</h3>
-			</div>
-			<div class="tile">
-				<h3>The Wind Rises</h3>
+			<div class="row">
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+					<div class="tile box-row">
+						<h3>Ponyo</h3>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+					<div class="tile box-row">
+						<h3>The Wind Rises</h3>
+					</div>
+				</div>
 			</div>
 		</section>
 	</div><!--end grid-container-->
@@ -103,5 +133,6 @@
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script src="js/script.js" type="text/javascript"></script>
 </html>
