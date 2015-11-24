@@ -80,31 +80,9 @@ p {
 /* ADDITIONAL STYLES
 /*******************************************/
 
-/** LAYOUT **/
-/*.grid-container {
-  width: 100%;
-  max-width: 1024px;
-  margin: 0 auto;
+.container-fluid-padding {
+  padding: 50px;
 }
-
-.row:before, .row:after {
-  content:"";
-  display: table ;
-  clear: both;
-}*/
-
-.hero {
-  padding: 50px 0;
-}
-
-.divider {
-  border-bottom: 1px solid black;
-  width: 30%;
-  margin-top: 20px;
-  margin: 0 auto;
-}
-
-
 
 /** FONT STYLES **/
 .h1 {
@@ -217,9 +195,8 @@ body.has-active-menu {
 
 /** TILE STYLES **/
 .tile {
-  background-color: #dedede;
-  height: auto;
-  /*margin: 1%;*/
+  border: 1px solid gray;
+  margin-bottom: 5px;
 }
 
 @media all and (min-width: 320px) {
@@ -264,7 +241,21 @@ body.has-active-menu {
 
   /** BODY BACKGROUND IMAGES **/
   .body-background {
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 
+/*  body#nausicaa-background {
+    background: url('../images/nausicaa-background.jpg');
+  }*/
+
+  .movie-icon {
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  .title-english:after {
+    border-bottom: 1px solid black;
   }
 
 

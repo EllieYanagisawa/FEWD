@@ -10,4 +10,6 @@ $(function(){
 		$('.menu__slide-left').removeClass('is-active');
 		$('.page-mask').removeClass('is-active');
 	});
+
+
 });

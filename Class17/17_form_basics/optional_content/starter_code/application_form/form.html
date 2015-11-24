@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<head>
+		<title>Join the Relaxr team!</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<div class="main-container">
+		<div class="form-container">
+			<form method="post" action="#">
+				<h2>Your Contact Info</h2>
+				<fieldset>
+					<div class="row">
+						<legend>Your name</legend>
+						<label class="row">
+							<input class="contact-info__name"type="text" name="first-name" placeholder="First">
+							<input class="contact-info__name" type="text" name="last-name" placeholder="Last">
+						</label>
+					</div>
+					<div class="row">
+						<legend>Phone number</legend>
+						<label class="row">
+							<input class="contact-info__phone" type="text" name="phone-number-1" maxlength="3">
+							<p>-</p>
+							<input class="contact-info__phone" type="text" name="phone-number-2" maxlength="3">
+							<p>-</p>
+							<input class="contact-info__phone" type="text" name="phone-number-3" maxlength="4">	
+						</label>	
+					</div>
+					<div class="row">
+						<legend>Address</legend>
+						<label>
+							<input class="contact-info__address street" type="text" name="street" placeholder="Street Address">
+							<input class="contact-info__address street" type="text" name="street-2" placeholder="Address Line 2">
+							<div class="row contact-info__address">
+								<input type="text" name="city" placeholder="City">
+								<input type="text" name="state" placeholder="State">
+								<input type="text" name="zipcode" placeholder="Postal Code">
+							</div>
+						</label>
+					</div>
+				</fieldset>
+				<fieldset>
+					<h2>Skills &amp; Interests</h2>
+					<div class="row">
+						<legend>Course</legend>
+						<label class="row">
+							<select label="Select One">
+								<optgroup label="Web Development">
+									<option value="skills_firstoption">Front-end</option>
+									<option value="skills_secondoption">Back-end</option>
+								</optgroup>
+								<optgroup label="Design">
+									<option value="skills_thirdoption">Visual Design</option>
+									<option value="skills_fourthoption">User Experience</option>
+								</optgroup>
+							</select>
+						</label>
+					</div>
+				</fieldset>
+				<fieldset>
+					<div class="row">
+						<legend>Past Experience</legend>
+						<label class="row">
+							<textarea></textarea>
+						</label>
+					</div>
+				</fieldset>
+				<fieldset>
+					<h2>Anything Else?</h2>
+					<div class="row">
+						<legend>Referal</legend>
+						<label>
+							<select>
+								<option value="referal_firstoption">None</option>
+								<option value="referal_secondoption">Friend</option>
+								<option value="referal_thirdoption">Instructor</option>
+								<option value="referal_fourthoption">Online</option>
+							</select>
+						</label>
+					</div>
+					<div class="row">
+						<legend>Comments</legend>
+						<label>
+							<textarea></textarea>
+						</label>
+					</div>
+				</fieldset>
+				<button type="save" value="save">Save Draft</button>
+				<input type="submit" value="submit">
+			</form>
+		</div><!--end form-container-->
+	</div><!--end main-container-->
+</body>
+</html>
