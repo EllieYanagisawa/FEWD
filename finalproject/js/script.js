@@ -1,8 +1,10 @@
 $(function(){
+	//menu reveal
 	$('#nav-button').click(function(){
 		$('body').addClass('has-active-menu');
 		$('.menu__slide-left').addClass('is-active');
 		$('.page-mask').addClass('is-active');
+		//$('.menu__item--sub-click').addClass('is-active');
 	});
 
 	$('.close-button, .page-mask').click(function(){
@@ -11,63 +13,55 @@ $(function(){
 		$('.page-mask').removeClass('is-active');
 	});
 
+	//sub menu reveal
+	$('.menu__item--sub-click').click(function(){
+
+	});
+
 	//begin quiz code
-	var firstRadioBtn = $("input#firstCorrect");
-	var secondRadioBtn = $("input#secondCorrect");
-	var thirdRadioBtn = $("input#thirdCorrecct");
-	var fourthRadioBtn = $("input#fourthCorrect");
-	var fifthRadioBtn = $("input#fifthCorrect");
-	var sixthRadioBtn = $("input#sixthCorrect");
-
-	//store fieldsets in array that will be accessed in for loop while checking answers.
-	var fieldsetsArray = [$("fieldset[name='first-question']"), $("fieldset[name='second-question']"), $("fieldset[name='third-question']"), $("fieldset[name='fourth-question']"), $("fieldset[name='fifth-question']"), $("fieldset[name='sixth-question']")];
-
-	//change background color to green if answer is wrong
-	function rightAnswer() {
-		$(this).parent().animate({
-			backgroundColor: "green"
-		},
-			500
-		);
-	}
-
-	//change background color to red if answer is wrong
-	function wrongAnswer() {
-		$(this).parent().animate({
-			backgroundColor: "green"
-		},
-			500
-		);
-	}
-
-	//go through array. in first object of array, if the input element is equal to correct answer, then call rightAnswer(), which changes background color to green. else, if that child element is not equal to the correct answer, then call wrongAnswer() and continue through array. 
 	function checkAnswer() {
 
+		//store fieldsets in array that will be accessed in for loop to add change backgroung class based on right or wrong answer
+		var fieldsetsArray = ['first-question', 'second-question', 'third-question', 'fourth-question', 'fifth-question', 'sixth-question']
+
+		//array with correct answers
+		var correctAnswers = ['1987', 'Chihiro', 'Wales', 'Emishi', 'Savoia S.21', 'Heart']
+
+		//for loop compares correct answers with user selection and adds a class that changes background if it is right or wrong
 		for(var n = 0; n < fieldsetsArray.length; n++) {
+
+			var userInputSelection = $("input[name=" + (n + 1) + "]:checked").val();
+
 			//question 1
-			if (firstRadioBtn.val() === "1987") {
-				rightAnswer();
-				console.log("I AM WORKING!");
-			} else if (secondRadioBtn.val() === "Chihiro") {
-				rightAnswer();
-				console.log("I AM WORKING");
-			} else if (thirdRadioBtn.val() === "Wales") {
-				rightAnswer();
-			} else if (fourthRadioBtn.val() === "Emishi") {
-				rightAnswer();
-			} else if (fifthRadioBtn.val() === "Savoia S.21") {
-				rightAnswer();
-			} else if (sixthRadioBtn.val() === "Heart") {
-				rightAnswer();
+			if ( userInputSelection === correctAnswers[n]) {
+				$('fieldset[name="' + fieldsetsArray[n] + '"]').parent().addClass('quiz-container__correct-answer-background');
+				console.log(correctAnswers[n]);
 			} else {
-				wrongAnswer();
+				$('fieldset[name="' + fieldsetsArray[n] + '"]').parent().addClass('quiz-container__wrong-answer-background');
+				console.log("user chose wrong answer.");
 			}
 		}
+	}
+
+	function displayNext() {
+
 	}
 
 	//listen to submit event 
 	$("#submit").click(function(){
 		checkAnswer();
-		console.log("I'M WORKING.")
+		//console.log("submit")
+
+	});
+
+	//replay
+	$("#reset").click(function(){
+		$('input[name="1"]', 'input[name="2"]', 'input[name="3"]', 'input[name="4"]', 'input[name="5"]', 'input[name="6"]').attr('checked',false);
+	});
+
+	//begin fullPage.js
+	$('#fullpage').fullpage({
+		'navigation': true,
+		'navigationPosition': 'right'
 	});
 });

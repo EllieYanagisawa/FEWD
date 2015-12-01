@@ -37,56 +37,121 @@
 			</ul>
 		</nav>
 	</header>
-	<section class="container-fluid-padding quiz-container">
-		<fieldset class="question" name="first-question">
-			<legend class="question-number">Question 1</legend>
-			<p>What year was Nausicaa of the Valley of the Wind made?</p>
-			<input value="2004" type="radio" name="1">2004</input>
-			<input value="1999" type="radio" name="1">1999</input>
-			<input value="1987" type="radio" name="1" id="#firstCorrect">1987</input>
-			<input value="1989" type="radio" name="1">1989</input>
-		</fieldset>
-		<fieldset class="question" name="second-question">
-			<legend class="question-number">Question 2</legend>
-			<p>Who is the main protagonist of Spirited Away?</p>
-			<input value="Chihiro" type="radio" name="2" id="#secondCorrect">Chihiro</input>
-			<input value="Yu Baba" type="radio" name="2">Yu Baba</input>
-			<input value="Haku" type="radio" name="2">Haku</input>
-			<input value="No Face" type="radio" name="2">No Face</input> 
-		</fieldset>
-		<fieldset class="question" name="third-question">
-			<legend class="question-number">Question 3</legend>
-			<p>What country's mining towns inspired the architecture in Castle In the Sky?</p>
-			<input value="Vietnam" type="radio" name="3">Vietnam</input>
-			<input value="Wales" type="radio" name="3" id="thirdCorrect">Wales</input>
-			<input value="United States" type="radio" name="3">United States</input>
-			<input value="Germany" type="radio" name="3">Germany</input>
-		</fieldset>
-		<fieldset class="question" name="fourth-question">
-			<legend class="question-number">Question 4</legend>
-			<p>The character Ashitaka in Princess Mononoke is the prince of what indigenous peoples of Japan?</p>
-			<input value="Ainu" type="radio" name="4">Ainu</input>
-			<input value="Ryukyuan" type="radio" name="4">Ryukyuan</input>
-			<input value="Orok" type="radio" name="4">Orok</input>
-			<input value="Emishi" type="radio" name="4" id="forthCorrect">Emishi</input>
-		</fieldset>
-		<fieldset class="question" name="fifth-question">
-			<legend class="question-number">Question 5</legend>
-			<p>What kind of plane does the Porco Rosso fly?</p>
-			<input value="Savoia S.21" type="radio" name="5" id="fifthCorrect">Savoia S.21</input>
-			<input value="Mitsubishi A6M Zero" type="radio" name="5">Mitsubishi A6M Zero</input>
-			<input value="Noorduyn Norseman" type="radio" name="5">Noorduyn Norseman</input>
-			<input value="Harbin Sh-5" type="radio" name="5">Harbin Sh-5</input>
-		</fieldset>
-		<fieldset class="question" name="sixth-question">
-			<legend class="question-number">Question 6</legend>
-			<p>Howl has a missing organ. What is it?</p>
-			<input value="Kidney" type="radio" name="6">Kidney</input>
-			<input value="Lungs" type="radio" name="6">Lungs</input>
-			<input value="Heart" type="radio" name="6" id="sixthCorrect">Heart</input>
-			<input value="Brain" type="radio" name="6">Brain</input>
-		</fieldset>
-		<input id="submit" value="Submit" type="submit"></input><br>
+	<section class="container-fluid">
+		<section class="container-fluid-padding">
+			<div class="quiz-container">
+				<div id="first" class="quiz-container__question-container">
+					<fieldset class="question" name="first-question">
+						<legend class="question-number">Question 1</legend>
+						<p>What year was Nausicaa of the Valley of the Wind made?</p>
+						<label>
+							<input value="2004" type="radio" name="1">2004</input>
+						</label>
+						<label>
+							<input value="1999" type="radio" name="1">1999</input>
+						</label>
+						<label>
+							<input value="1987" type="radio" name="1" id="#firstCorrect">1987</input>
+						</label>
+						<label>
+							<input value="1989" type="radio" name="1">1989</input>
+						</label>
+					</fieldset>
+				</div>
+				<div class="quiz-container__question-container">
+					<fieldset class="question" name="second-question">
+						<legend class="question-number">Question 2</legend>
+						<p>Who is the main protagonist of Spirited Away?</p>
+						<label>
+							<input value="Chihiro" type="radio" name="2" id="#secondCorrect">Chihiro</input>
+						</label>
+						<label>
+							<input value="Yu Baba" type="radio" name="2">Yu Baba</input>
+						</label>
+						<label>
+							<input value="Haku" type="radio" name="2">Haku</input>
+						</label>
+						<label>
+							<input value="No Face" type="radio" name="2">No Face</input> 
+						</label>
+					</fieldset>
+				</div>
+				<div class="quiz-container__question-container">
+					<fieldset class="question" name="third-question">
+						<legend class="question-number">Question 3</legend>
+						<p>What country's mining towns inspired the architecture in Castle In the Sky?</p>
+						<label>
+							<input value="Vietnam" type="radio" name="3">Vietnam</input>
+						</label>
+						<label>
+							<input value="Wales" type="radio" name="3" id="thirdCorrect">Wales</input>
+						</label>
+						<label>
+							<input value="United States" type="radio" name="3">United States</input>
+						</label>
+						<label>
+							<input value="Germany" type="radio" name="3">Germany</input>
+						</label>
+					</fieldset>
+				</div>
+				<div class="quiz-container__question-container">
+					<fieldset class="question" name="fourth-question">
+						<legend class="question-number">Question 4</legend>
+						<p>The character Ashitaka in Princess Mononoke is the prince of what indigenous peoples of Japan?</p>
+						<label>
+							<input value="Ainu" type="radio" name="4">Ainu</input>
+						</label>
+						<label>
+							<input value="Ryukyuan" type="radio" name="4">Ryukyuan</input>
+						</label>
+						<label>
+							<input value="Orok" type="radio" name="4">Orok</input>
+						</label>
+						<label>
+							<input value="Emishi" type="radio" name="4" id="forthCorrect">Emishi</input>
+						</label>
+					</fieldset>
+				</div>
+				<div class="quiz-container__question-container">
+					<fieldset class="question" name="fifth-question">
+						<legend class="question-number">Question 5</legend>
+						<p>What kind of plane does the Porco Rosso fly?</p>
+						<label>
+							<input value="Savoia S.21" type="radio" name="5" id="fifthCorrect">Savoia S.21</input>
+						</label>
+						<label>
+							<input value="Mitsubishi A6M Zero" type="radio" name="5">Mitsubishi A6M Zero</input>
+						</label>
+						<label>
+							<input value="Noorduyn Norseman" type="radio" name="5">Noorduyn Norseman</input>
+						</label>
+						<label>
+							<input value="Harbin Sh-5" type="radio" name="5">Harbin Sh-5</input>
+						</label>
+					</fieldset>
+				</div>
+				<div class="quiz-container__question-container">
+					<fieldset class="question" name="sixth-question">
+						<legend class="question-number">Question 6</legend>
+						<p>Howl has a missing organ. What is it?</p>
+						<label>
+							<input value="Kidney" type="radio" name="6">Kidney</input>
+						</label>
+						<label>
+							<input value="Lungs" type="radio" name="6">Lungs</input>
+						</label>
+						<label>
+							<input value="Heart" type="radio" name="6" id="sixthCorrect">Heart</input>
+						</label>
+						<label>
+							<input value="Brain" type="radio" name="6">Brain</input>
+						</label>
+					</fieldset>
+				</div>
+				<input id="submit" value="Submit" type="submit"></input><br>
+				<button id="reset">Replay</button>
+			</div>
+		</section>
 	</section>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
