@@ -30,34 +30,38 @@ $(function(){
 		//for loop compares correct answers with user selection and adds a class that changes background if it is right or wrong
 		for(var n = 0; n < fieldsetsArray.length; n++) {
 
-			var userInputSelection = $("input[name=" + (n + 1) + "]:checked").val();
+			var userInputSelection = $('input[name=' + (n + 1) + ']:checked').val();
 
 			//question 1
-			if ( userInputSelection === correctAnswers[n]) {
+			if (userInputSelection === correctAnswers[n]) {
 				$('fieldset[name="' + fieldsetsArray[n] + '"]').parent().addClass('quiz-container__correct-answer-background');
-				console.log(correctAnswers[n]);
+				//console.log(correctAnswers[n]);
 			} else {
 				$('fieldset[name="' + fieldsetsArray[n] + '"]').parent().addClass('quiz-container__wrong-answer-background');
-				console.log("user chose wrong answer.");
+				//console.log("user chose wrong answer.");
 			}
 		}
-	}
 
-	function displayNext() {
+		var count = $('.quiz-container__correct-answer-background').length;
+
+		$('.quiz__score-container--content').html('<p>You got ' + count + '/' + correctAnswers.length + ' correct!</p><button id="reset">Replay</button>');
+
+		$('.quiz__score-container').addClass('reveal');
 
 	}
 
 	//listen to submit event 
-	$("#submit").click(function(){
+	$('#submit').click(function(){
 		checkAnswer();
 		//console.log("submit")
-
 	});
 
-	//replay
-	$("#reset").click(function(){
-		$('input[name="1"]', 'input[name="2"]', 'input[name="3"]', 'input[name="4"]', 'input[name="5"]', 'input[name="6"]').attr('checked',false);
-	});
+		//replay
+		$('.quiz__score-container--content').on('click', '#reset', function(){
+			$('input').attr('checked',false);
+			$('fieldset').parent().removeClass('quiz-container__correct-answer-background quiz-container__wrong-answer-background');
+			$('.quiz__score-container').removeClass('reveal');
+		});
 
 	//begin fullPage.js
 	$('#fullpage').fullpage({
