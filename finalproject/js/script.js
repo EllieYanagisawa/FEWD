@@ -56,16 +56,20 @@ $(function(){
 		//console.log("submit")
 	});
 
-		//replay
-		$('.quiz__score-container--content').on('click', '#reset', function(){
-			$('input').attr('checked', false);
-			$('fieldset').parent().removeClass('quiz-container__correct-answer-background quiz-container__wrong-answer-background');
-			$('.quiz__score-container').removeClass('reveal');
-		});
-
-	//begin fullPage.js
-	$('#fullpage').fullpage({
-		'navigation': true,
-		'navigationPosition': 'right'
+	//replay
+	$('.quiz__score-container--content').on('click', '#reset', function(){
+		$('input').attr('checked', false);
+		$('fieldset').parent().removeClass('quiz-container__correct-answer-background quiz-container__wrong-answer-background');
+		$('.quiz__score-container').removeClass('reveal');
+		$('html, body').animate({scrollTop: 0}, 800);
 	});
+
+		//begin fullPage.js
+			$('#fullpage').fullpage({
+				'navigation': true,
+				'navigationPosition': 'right'
+			});
+
+	//wow.js
+	new WOW().init();
 });

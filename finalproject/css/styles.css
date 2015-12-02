@@ -53,6 +53,7 @@ body::before {
   /* never visible - this is used in jQuery to check the current MQ */
   content: 'mobile';
   display: none;
+
 }
 @media only screen and (min-width: 1050px) {
   body::before {
@@ -79,8 +80,15 @@ i {
 
 h1 {
   font-family: Futura, Arial, sans-serif;
-  font-size: 1.5em;
+  font-size: 5em;
   text-align: center;
+}
+
+h2 {
+  font-family: 'Cardo', serif;
+  font-size: 4em;
+  text-align: center;
+  color: white;
 }
 
 p {
@@ -88,32 +96,47 @@ p {
   font-size: 2em;
 }
 
-fieldset {
+@media only screen and (max-width: 768px) {
+  p {
+    font-size: 1.5em;
+  }
+}
 
+button {
+  border-radius: 5px;
+  background-color: #ffdb70;
+  border: none;
+  padding: 10px;
+  width: 30%;
+  margin: 0 auto;
+  display: inherit;
+}
+
+legend {
+  font-family: Futura, sans-serif;
+  font-size: 2em;
+  color: white;
 }
 
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-.container-fluid {
-  padding: 0!important;
+.gutter-top-5 {
+  padding-top: 50px;
 }
-
 
 .container-fluid-padding {
   padding: 50px;
 }
 
-button.enter {
-  background-color: ;
+.p-section {
+  padding: 30px;
 }
 
 /** FONT STYLES **/
-.h1 {
-  font-family: Futura, Arial, sans-serif;
-  font-size: 1.5em;
-  text-align: center;
+.english:after {
+  border-bottom: 1px solid black;
 }
 
 /** NAV STYLES **/
@@ -211,6 +234,8 @@ body.has-active-menu {
   display: block;
   padding: 12px 24px;
   width: 100%;
+  background-color: #939393;
+  border-radius: 0;
 }
 
 .dedication {
@@ -289,6 +314,49 @@ body.has-active-menu {
   margin: 20px;
   border-radius: 30px;
   padding: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quiz-container__question-container p {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.quiz-container__question-container:first-of-type {
+  background-image: url("../images/quizBackgrounds/ohmuandn.jpg");
+  background-position: top right;
+}
+
+.quiz-container__question-container:nth-of-type(2) {
+  background-image: url("../images/quizBackgrounds/chihiro.png");
+  background-position: bottom center;
+}
+
+.quiz-container__question-container:nth-of-type(3) {
+  background-image: url("../images/quizBackgrounds/mining.jpg");
+  background-position: center center;
+}
+
+.quiz-container__question-container:nth-of-type(4) {
+  background-image: url("../images/quizBackgrounds/ashitaka.jpg");
+  background-position: bottom right;
+}
+
+.quiz-container__question-container:nth-of-type(5) {
+  background-image: url("../images/quizBackgrounds/plane.jpg");
+  background-position: top center;
+}
+
+.quiz-container__question-container:nth-of-type(6) {
+  background-image: url("../images/quizBackgrounds/howl-crow.jpg");
+  background-position: bottom right;
+}
+
+.question p:nth-of-type(6) {
+  color: white;
 }
 
 .quiz-container__correct-answer-background {
@@ -299,18 +367,20 @@ body.has-active-menu {
   background-color: rgba(240,128,128, 0.7);
 }
 
-div#first {
-  background-image: url("../images/quizBackgrounds/ohmuandn.jpg");
-}
-
 label {
   display: inline-block;
   width: 49%;
-  background-color: lightblue;
+  background-color: #ededed;
   padding: 5px;
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
+}
+
+@media only screen and (max-width: 401px) {
+  label {
+    width: 100%;
+  }
 }
 
 input[type="radio"] {
@@ -325,12 +395,12 @@ input[type="radio"]:checked + label, label:focus {
   position: fixed;
   z-index: 200;
   width: 100%;
-  height: 100px;
+  height: 120px;
   bottom: 0;
   left: 0;
   transform: translateY(100%);
   transition: transform 0.3s;
-  background-color: blue;
+  background-color: #abfaea;
 }
 
 .quiz__score-container.reveal {
@@ -338,21 +408,30 @@ input[type="radio"]:checked + label, label:focus {
 }
 
 .quiz__score-container p {
-  color: white;
+  color: #444;
   font-size: 3em;
   text-align: center;
+  font-family: Futura;
 }
 
 .quiz__score-container #reset {
   text-align: center;
 }
 
-/** PAGE SCROLL STYLES FROM PLUGIN **/
+#submit {
+  background-color: transparent;
+  border: none;
+  font-family: Futura, sans-serif;
+  font-size: 2em;
+  width: 100%;
+  padding: 10px;
+}
+
+/** PAGE SCROLL STYLES FROM PLUGIN : TIMELINE **/
 #fullpage .section {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10% 0 0 0;
 }
 
 #fullpage .section:nth-of-type(2) {
@@ -514,6 +593,23 @@ input[type="radio"]:checked + label, label:focus {
     right: 20px;
 }
 
+button.enter {
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    padding: 20px;
+    font-size: 2em;
+    width: 30%;
+    height: 80px;
+    font-family: futura;
+}
+
+button.enter:hover {
+  background-color: white;
+  color: #444;
+  transition: all 0.25s ease-in-out;
+}
+
 /** MOVIE PAGES **/
 .full-height {
   height: 100vh;
@@ -529,7 +625,16 @@ input[type="radio"]:checked + label, label:focus {
 }
 
 /* nausicaa */
+.fukai {
+  background-image: url('http://25.media.tumblr.com/tumblr_m8yy757aWw1rt479bo1_500.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
 
-
+.ohmu {
+  height: 90%;
+  width: 90%;
+}
 
 
