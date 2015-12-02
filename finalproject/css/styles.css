@@ -515,25 +515,21 @@ input[type="radio"]:checked + label, label:focus {
 }
 
 /** MOVIE PAGES **/
-.intro {
+.full-height {
   height: 100vh;
 }
 
-.intro-nausicaa {
-  /*background-color: #22140F;*/
-}
-
-.movie-container {
-  height: 100vh;
-}
-
-.movie-container p {
+.movie-summary p {
   color: #444;
 }
 
-/* nausicaa */
-#kyoshinhei {
-  /*background-image: url('../images/backgrounds/kyoshinhei.png');*/
+.full-width {
+  width: 100%!important;
+  padding: 0;
 }
+
+/* nausicaa */
+
+
 
 
