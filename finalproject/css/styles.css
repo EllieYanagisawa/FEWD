@@ -85,7 +85,7 @@ h1 {
 
 p {
   font-family: 'Cardo', serif;
-  font-size: 1em;
+  font-size: 2em;
 }
 
 fieldset {
@@ -96,6 +96,10 @@ fieldset {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+.container-fluid {
+  padding: 0!important;
+}
+
 
 .container-fluid-padding {
   padding: 50px;
@@ -258,6 +262,12 @@ body.has-active-menu {
       fill-opacity: 1; 
     }
   }
+
+.svgTitle {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
 
 .movie-icon {
   height: 250px;
@@ -502,6 +512,28 @@ input[type="radio"]:checked + label, label:focus {
 
 #fp-nav ul li .fp-tooltip.right {
     right: 20px;
+}
+
+/** MOVIE PAGES **/
+.intro {
+  height: 100vh;
+}
+
+.intro-nausicaa {
+  /*background-color: #22140F;*/
+}
+
+.movie-container {
+  height: 100vh;
+}
+
+.movie-container p {
+  color: #444;
+}
+
+/* nausicaa */
+#kyoshinhei {
+  /*background-image: url('../images/backgrounds/kyoshinhei.png');*/
 }
 
 

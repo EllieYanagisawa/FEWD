@@ -58,7 +58,7 @@ $(function(){
 
 		//replay
 		$('.quiz__score-container--content').on('click', '#reset', function(){
-			$('input').attr('checked',false);
+			$('input').attr('checked', false);
 			$('fieldset').parent().removeClass('quiz-container__correct-answer-background quiz-container__wrong-answer-background');
 			$('.quiz__score-container').removeClass('reveal');
 		});
